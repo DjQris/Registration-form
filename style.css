@@ -15,6 +15,7 @@
   --text-color: #1a1a1a;
   --text-color-1: #636363;
   --primary-color: #0000a2;
+  --link-color: #0000a2;
   --button-text: #f7f7f7;
   --stroke-color: #d9d9d9;
   --white: #ffffff;
@@ -24,7 +25,8 @@
     --bg-color: #1a1a1a;
     --text-color: #f7f7f7;
     --text-color-1: #c9c9c9;
-    --primary-color: #0000e0;
+    --primary-color: #5757ff;
+    --link-color: #5a5a87;
     --button-text: #f7f7f7;
     --stroke-color: #d9d9d9;
     --white: #2a2a2a;
@@ -260,7 +262,7 @@ button {
 
 .sign-up-container a {
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--link-color);
   font-family: Inter;
   font-size: 0.875rem;
   font-style: normal;
@@ -277,6 +279,10 @@ button {
   .card-wrapper {
     width: 70%;
   }
+
+  .heading h1{
+    letter-spacing: -0.03125rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -287,6 +293,10 @@ button {
   .card-wrapper {
     width: 80%;
     row-gap: 1.5rem;
+  }
+
+  .heading h1{
+    letter-spacing: -0.03125rem;
   }
 
   .input-group {
@@ -339,7 +349,8 @@ button {
     --bg-color: #1a1a1a;
     --text-color: #f7f7f7;
     --text-color-1: #c9c9c9;
-    --primary-color: #0000e0;
+    --primary-color: #5757ff;
+    --link-color: #5757ff;
     --button-text: #f7f7f7;
     --stroke-color: #4c4c4c;
     --white: #2a2a2a;
@@ -347,12 +358,16 @@ button {
 
   .input-group input:focus {
     transition: 150ms;
-    box-shadow: 0 0 2px 0 #0e0ef6;
+    box-shadow: 0 0 2px 0 var(--primary-color);
   }
 
   .card-wrapper {
     box-shadow: 0 111px 31px 0 rgba(0, 0, 0, 0),
       0 71px 28px 0 rgba(0, 0, 0, 0.01), 0 40px 24px 0 rgba(0, 0, 0, 0.05),
       0 18px 18px 0 rgba(0, 0, 0, 0.09), 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .sign-up-container a{
+    color: var(--link-color);
   }
 }
